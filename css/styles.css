@@ -1,0 +1,97 @@
+.main {}
+
+
+/* Navigation bar at top style structure */
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 25px;
+    height: 30px;
+}
+
+.nav-bar-container {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.nav-bar-item {
+    display: block;
+    padding: 0;
+    padding-right: 60px;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+li.nav {
+    display: inline;
+    float: left;
+}
+
+/*Introduction blurb flex box*/
+.intro-blurb-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+#Name {
+    font-family: 'Inconsolata', monospace;
+    font-size: 48px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#descrip {
+    font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.contact-info {
+    margin: 0, auto;
+    padding-left: 0px;
+    justify-content: center;
+    align-content: center;
+}
+
+li.contact {
+    display: block;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    justify-items: center;
+}
+
+img.contact {
+    width: 35px;
+}
+
+/* GLOBAL STYLE DEFINITIONS */
+
+/* define text style for hyperlinks on nav-bar */
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: Poppins, sans-serif;
+}
