@@ -1,4 +1,42 @@
-.main {}
+/* GLOBAL STYLE DEFINITIONS */
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 0, auto;
+}
+
+.left-spacer {
+    width: 20%;
+}
+
+/* define text style for hyperlinks on nav-bar */
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+/*default text styles*/
+
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+}
 
 
 /* Navigation bar at top style structure */
@@ -43,26 +81,31 @@ li.nav {
 }
 
 #Name {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 48px;
-    margin: 0 auto;
+    margin: 0;
     padding-left: 20px;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 #descrip {
-    font-family: 'Inconsolata', monospace;
-    font-size: 24px;
-    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    margin: 0;
     padding-left: 20px;
 }
 
 .contact-info {
     margin: 0, auto;
-    padding-left: 0px;
+    padding-left: 100px;
     justify-content: center;
     align-content: center;
+}
+
+.intro {
+    margin 0;
+    padding-right: 50px;
 }
 
 li.contact {
@@ -76,22 +119,52 @@ li.contact {
 }
 
 img.contact {
-    width: 35px;
+    width: 30px;
 }
 
-/* GLOBAL STYLE DEFINITIONS */
-
-/* define text style for hyperlinks on nav-bar */
-a:visited {
-    text-decoration: none;
-    color: black;
+img.contact:hover {
+    opacity: 0.5;
 }
 
-a:link {
-    text-decoration: none;
-    color: black;
+/*Project flex box styling*/
+
+.projects {
+    display: flex;
+    flex-direction: column;
 }
 
-p {
+.project-bin {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    margin 0;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-img,
+.project-descrip {
+    margin: 10px;
+    flex-basis: 20em;
+}
+
+div.project-img img {
+    width: 450px;
+}
+
+.proj-skill-img {
+    width: 85px;
+    filter: grayscale(100%);
+}
+
+div.project-descrip p,
+a {
     font-family: Poppins, sans-serif;
+    font-size: 14px;
+    min-width: 0;
+}
+
+div.project-descrip h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
 }
