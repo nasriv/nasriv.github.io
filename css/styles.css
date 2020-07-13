@@ -1,6 +1,5 @@
 /* GLOBAL STYLE DEFINITIONS */
 
-
 .main {
     display: flex;
     flex-direction: row;
@@ -8,7 +7,7 @@
 }
 
 .left-spacer {
-    width: 20%;
+    width: 250px;
 }
 
 /* define text style for hyperlinks on nav-bar */
@@ -126,14 +125,16 @@ img.contact:hover {
     opacity: 0.5;
 }
 
-/*Project flex box styling*/
+/*Project html styling*/
 
-.projects {
+.subpages h1,
+h3 {
     display: flex;
     flex-direction: column;
+    font-family: Poppins, sans-serif;
 }
 
-.project-bin {
+.subpage-bin {
     display: flex;
     flex-direction: row;
     padding-top: 0px;
@@ -142,29 +143,38 @@ img.contact:hover {
     align-items: center;
 }
 
-.project-img,
-.project-descrip {
+.subpage-bin-skills {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    margin 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.subpage-img,
+.subpage-descrip {
     margin: 10px;
     flex-basis: 20em;
 }
 
-div.project-img img {
-    width: 450px;
+div.subpage-img img {
+    width: 150px;
 }
 
-.proj-skill-img {
+.subpage-skill-img {
     width: 85px;
     filter: grayscale(100%);
 }
 
-div.project-descrip p,
+div.subpage-descrip p,
 a {
     font-family: Poppins, sans-serif;
     font-size: 14px;
     min-width: 0;
 }
 
-div.project-descrip h3 {
+div.subpage-descrip h3 {
     font-family: Poppins, sans-serif;
     font-size: 18px;
 }
