@@ -125,6 +125,10 @@ img.contact:hover {
     opacity: 0.5;
 }
 
+.icon-title {
+    font: pt;
+}
+
 /*Project html styling*/
 
 .subpages h1,
