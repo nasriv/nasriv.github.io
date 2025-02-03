@@ -1,3 +1,3 @@
 # nasriv.github.io
 
-updated portfolio using django and hosted on personal heroku server see django_portfolio_v1
+Personal portfolio hosted on github (nasri.info)

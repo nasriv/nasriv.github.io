@@ -1,0 +1,27 @@
+
+.tiles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+#projects.tiles-main {
+    display: flex;
+    --s: 100px; /*size*/
+    --m: 4px; /*margin*/
+}
+
+.tiles-grid {
+    font-size: 0;
+}
+
+.tiles-grid.hexagon {
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s) * 1.1547);
+    font-size: initial;
+    /* we reset the font-size if we want to add some content */
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
