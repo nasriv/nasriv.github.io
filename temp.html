@@ -3,37 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>nasri.info</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav>
-      <h1>Your Name</h1>
-      <h2>Your Title</h2>
+    <header>
+      <h1>Vincent Nasri</h1>
+      <h2>Staff Data Engineer</h2>
       <div class="social-icons">
-        <a href="https://github.com/yourprofile" target="_blank"
-          ><img src="github-icon.png" alt="GitHub"
+        <a href="https://github.com/nasriv" target="_blank"
+          ><img id="github" src="images/icons/github-mark.png" alt="GitHub"
         /></a>
-        <a href="mailto:your.email@example.com"
-          ><img src="email-icon.png" alt="Email"
+        <a href="https://linkedin.com/in/vincentnasri" target="_blank"
+          ><img
+            id="linkedin"
+            src="images/icons/In-White-128-Γäó@2x.png"
+            alt="LinkedIn"
         /></a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"
-          ><img src="linkedin-icon.png" alt="LinkedIn"
+        <a href="mailto:vincent@nasri.info"
+          ><img src="images/icons/email.png" alt="Email"
         /></a>
       </div>
-    </nav>
-    <header>
-      <h1>Welcome to My Portfolio</h1>
     </header>
     <main>
       <section id="career">
-        <div class="career-path">
-          <h2>Career Path & Progression</h2>
-          <!-- Add your career path details here -->
+        <div>
+          <h2>Journey</h2>
+          <svg class="line" height="3" width="98%">
+            <line
+              x1="8.5%"
+              y1="0"
+              x2="100%"
+              y2="0"
+              style="stroke:rgb(78, 77, 77);stroke-width:3"
+              marker-end="url(#arrow)"
+            />
         </div>
-        <div class="projects-mural">
-          <h2>Projects</h2>
-          <!-- Add your projects here -->
+        <div class="career-flex">
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-flex">
         </div>
       </section>
       <section id="skills">
@@ -50,8 +65,9 @@
       </section>
     </main>
     <footer>
-      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <p>&copy; <span id="footer-year"></span></p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="journey.js"></script>
+    <script src="projects.js"></script>
   </body>
 </html>

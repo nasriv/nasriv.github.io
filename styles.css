@@ -1,68 +1,146 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inconsolata';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-nav h1, nav h2 {
-    margin: 0;
-}
-
-.social-icons img {
-    width: 30px;
-    margin-left: 10px;
+main {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 header {
     text-align: center;
     padding: 2rem;
-    background-color: #f4f4f4;
 }
 
-main {
-    padding: 2rem;
+header h1 {
+    font-size: 42pt;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
 }
 
-#career {
+header h2 {
+    font-size: 24pt;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-left: 10px;
+    opacity: 0.65;
+}
+
+#linkedin, #github {
+    filter: brightness(0) invert(0);
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
+
+.career-flex {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.career-path, .projects-mural {
-    width: 48%;
+.line {
+    transform: translateY(100px);
 }
 
-.projects-mural a {
-    display: block;
-    margin-bottom: 1rem;
-    text-decoration: none;
+.career-item {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.projects-mural a:hover {
-    text-decoration: underline;
+.career-item #meta:hover {
+    opacity: 0.25;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 1rem;
+.career-item #meta {
+    height: 60px;
+    width: 200px;
+    margin: 0;
+    padding: 5px;
+    border: 1px;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
 }
 
-.skills-grid img {
-    width: 100%;
-    transition: transform 0.3s;
+.career-item #meta p {
+    font-size: 10pt;
+    margin: 0;
+    padding: 3px;
 }
 
-.skills-grid img:hover {
-    transform: scale(1.1);
+.career-item #meta h3 {
+    font-size: 12pt;
+    margin: 5px;
+    padding: 0;
+}
+
+.career-item #logo p {
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+
+.career-item #logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.career-item #logo img {
+    width: auto;
+    height: 50px;
+    padding: 4px;
+}
+
+/* scale selected logos */
+.career-item:nth-child(4) img {
+    transform: scale(0.7);
+}
+.career-item:nth-child(5) img {
+    transform: scale(1.2);
+}
+.career-item:nth-child(6) img {
+    transform: scale(0.73);
+}
+
+.projects-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.project-item img {
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.project-item:hover img {
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
 }
 
 #publications ul {
