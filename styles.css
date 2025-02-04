@@ -1,27 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.tiles-grid {
+nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
-#projects.tiles-main {
+nav h1, nav h2 {
+    margin: 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 2rem;
+}
+
+#career {
     display: flex;
-    --s: 100px; /*size*/
-    --m: 4px; /*margin*/
+    justify-content: space-between;
 }
 
-.tiles-grid {
-    font-size: 0;
+.career-path, .projects-mural {
+    width: 48%;
 }
 
-.tiles-grid.hexagon {
-    width: var(--s);
-    margin: var(--m);
-    height: calc(var(--s) * 1.1547);
-    font-size: initial;
-    /* we reset the font-size if we want to add some content */
-    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+.projects-mural a {
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.projects-mural a:hover {
+    text-decoration: underline;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.skills-grid img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.skills-grid img:hover {
+    transform: scale(1.1);
+}
+
+#publications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#publications li {
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 10pt;
 }
