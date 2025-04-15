@@ -63,6 +63,8 @@ header h2 {
 
 .career-item #meta:hover {
     opacity: 0.25;
+    cursor: default;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .career-item #meta {
@@ -142,6 +144,44 @@ header h2 {
     opacity: 0.1;
     transition: opacity 0.3s ease;
 }
+
+.project-item #title {
+    font-style: bold;
+    font-size: 16pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill-bubble {
+    background-color: #ffffff;
+    /* White background */
+    color: #333;
+    /* Dark text color */
+    padding: 10px 20px;
+    border: 1px solid black;
+    /* Black border */
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+    /* Prevent cursor change on hover */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-bubble:hover {
+    opacity: 0.35;
+    /* Dark background on hover */
+
 
 #publications ul {
     list-style-type: none;

@@ -62,24 +62,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectItem = `
     <div class="project-item">
     <img src="${item.image}" alt="project image" />
-    <div class="title">${item.title}</div>
-    <div class="description">${item.description}</div>
+    <div id="title">${item.title}</div>
+    <div id="description">${item.description}</div>
     <a href="${item.url}" class="project-link">View Project</a>
     </div>`;
     projectFlex.insertAdjacentHTML("beforeend", projectItem);
   });
 });
 
-    // <svg width="200" height="200" viewBox="0 0 200 200">
-    //   <rect
-    //     x="0"
-    //     y="0"
-    //     width="200"
-    //     height="200"
-    //     rx="30"
-    //     ry="30"
-    //     fill="rgb(78, 77, 77)"
-    //     stroke="rgb(78, 77, 77)"
-    //     stroke-width="2px"
-    //   />
-    // </svg>;
+// <svg width="200" height="200" viewBox="0 0 200 200">
+//   <rect
+//     x="0"
+//     y="0"
+//     width="200"
+//     height="200"
+//     rx="30"
+//     ry="30"
+//     fill="rgb(78, 77, 77)"
+//     stroke="rgb(78, 77, 77)"
+//     stroke-width="2px"
+//   />
+// </svg>;
