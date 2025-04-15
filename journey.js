@@ -4,37 +4,37 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Bachelor of Science",
       company: "Columbia University",
       year: "May 2013",
-      img: "images/columbia_logo.png",
+      img: "../assets/images/columbia_logo.png",
     },
     {
       title: "Master of Science",
       company: "University of Texas, Austin",
       year: "Dec 2014",
-      img: "images/UTexas.png",
+      img: "../assets/images/UTexas.png",
     },
     {
       title: "Senior Project Engineer",
       company: "Thornton Tomasetti",
       year: "Feb 2015",
-      img: "images/TT_logo.png",
+      img: "../assets/images/TT_logo.png",
     },
     {
       title: "Optimization Engineer",
       company: "FullStack Modular",
       year: "Aug 2019",
-      img: "images/fsm_logo.svg",
+      img: "../assets/images/fsm_logo.svg",
     },
     {
       title: "Lead Digital Engineer",
       company: "Cytiva",
       year: "June 2021",
-      img: "images/cytiva_logo.svg",
+      img: "../assets/images/cytiva_logo.svg",
     },
     {
       title: "Staff Data Engineer",
       company: "Beckman Coulter",
       year: "May 2023",
-      img: "images/becdx_logo.svg",
+      img: "../assets/images/becdx_logo.svg",
     },
     // Add more careers as needed
   ];
