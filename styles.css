@@ -152,6 +152,11 @@ header h2 {
     margin-bottom: 5px;
 }
 
+.project-item #description {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +186,7 @@ header h2 {
 .skill-bubble:hover {
     opacity: 0.35;
     /* Dark background on hover */
-
+}
 
 #publications ul {
     list-style-type: none;
