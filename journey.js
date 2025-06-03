@@ -36,6 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
       year: "May 2023",
       img: "../assets/images/becdx_logo.svg",
     },
+    {
+      title: "Senior Data Engineer",
+      company: "Capital One",
+      year: "May 2025",
+      img: "../assets/images/Capital_One_logo.svg.png",
+    },
     // Add more careers as needed
   ];
 
